@@ -1,0 +1,15 @@
+{
+	"name": "biome-repro-devcontainer",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"containerEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["biomejs.biome@prerelease"]
+		}
+	}
+}
